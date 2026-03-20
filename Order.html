@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makometsa Poultry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <h1 style="color:black">Welcome to Makometsa Poultry</h1>
+    <h4 style="color:black">Hard Work You Can Taste</h4>
+    <p>Your Trusted Source For High-Quality poultry products.</p>
+    <h1 style="color:black">Order Now</h1>
+        <nav style="color:rgb(12, 11, 11)">
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="About.html">About</a> |
+        <a href="Contact.html">Contact</a> |
+        <a href="Order.html">Order</a> |
+        <a href="Feedback.html">Feedback</a> 
+    </nav>
+    </header>
+
+    <main>
+     </div>
+    <div class="right-col">
+        <p>Explore our range of premium poultry products and enjoy the best quality at affordable prices.</p>
+    </div>
+
+    <h2>Place Your Order</h2>
+    <p>We make it easy and convenient to order our poultry products.</p>
+
+    <h2>How To Order</h2>
+    <ol>
+        <li> Select your product</li>
+        <li> Select quantity</li>
+        <li> Provide your contact details</li>
+        <li> Choose delivery or collection</li>
+        <li> Choose payment method;Cash or Card</li>
+        <li> Submit your order</li>
+    </ol>
+    <p>We will confirm your order via phone or WhatsApp within minutes.</p>
+     <form>
+    
+ <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <label for="price">Price per Chicken (P):</label>
+            <input type="text" id="price" name="price" value="80.00" readonly>
+            <input type="button" id="calcBtn" value="Calculate Total">
+            <h3>Total Cost: P <span id="Total">0.00</span></h3>
+
+            
+<h2>Dynamic Product Calculator</h2>
+    
+    <label for="product">Select Product:</label>  
+    <select id="product" name="product">
+    <a href="Live Chicken">Live Chicken - P80.00</a>
+    <option value="Whole Chicken">Whole Chicken - P80.00</option>
+    <option value="Chicken Breasts">Chicken Breasts - P65.00</option>
+    <option value="Chicken Thighs">Chicken Thighs - P55.00</option>
+    <option value="Chicken Wings">Chicken Wings - P60.00</option>
+    <option value="Chicken Drumsticks">Chicken Drumsticks - P50.00</option>
+    <option value="Chicken Liver">Chicken Liver - P30.00</option>
+    <option value="Chicken Gizzards">Chicken Gizzards - P35.00</option>
+    <option value="Chicken Feet">Chicken Feet - P10.00</option>
+    <option value="Chicken Necks">Chicken Necks - P25.00</option>
+    <option value="Chicken Hearts">Chicken Hearts - P25.00</option>
+    <option value="Chicken Skin">Chicken Skin - P30.00</option>
+    <option value="Chicken Heads"> Chicken Heads - P25.00</option>
+    <option value="Chicken Intestines"> Chicken Intestines - P25.00</option>
+    <option value="Mateng Mix">Mateng Mix - P30.00</option>" 
+    </select>
+    <label for="price">Price (P):</label>
+    <select id="price" name="price">
+    <a href="Live Chicken">P80.00</a>
+    <option value="Whole Chicken">P80.00</option>
+    <option value="Chicken Breasts">P65.00</option>
+    <option value="Chicken Thighs">P55.00</option>
+    <option value="Chicken Wings">P60.00</option>
+    <option value="Chicken Drumsticks">P50.00</option>
+    <option value="Chicken Liver">P30.00</option>
+    <option value="Chicken Gizzards">P35.00</option>
+    <option value="Chicken Feet">P10.00</option>
+    <option value="Chicken Necks">P25.00</option>
+    <option value="Chicken Hearts">P25.00</option>
+    <option value="Chicken Skin">P30.00</option>
+    <option value="Chicken Heads">P25.00</option>
+    <option value="Chicken Intestines">P25.00</option>
+    <option value="Mateng Mix">P30.00</option>
+</select>
+
+    <input type="number" id="newQty" placeholder="Qty" min="0" value="1" class="num" />
+    <button id="addBtn">Add Product</button>
+    <button id="calcBtn">Calculate Total</button>
+  </div>
+    <table id="productTable" aria-label="Product table">
+        
+ <table id="productList" aria-label="Product list">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th class="right">Unit Price (P)</th>
+        <th class="right">Qty</th>
+        <th class="right">Subtotal (P)</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="rows">
+      <tr>
+        <td><input type="text" value="Live Chicken" class="name" aria-label="Product name"></td>
+        <td><input type="number" value="80.00" step="fixed" min="fixed" class="num price" aria-label="Unit price"></td>
+        <td><input type="number" value="80.00" step="fixed" min="fixed" class="num price" aria-label="Unit price"></td>
+
+    <td><input type="number" value="1" min="0" class="num qty" aria-label="Quantity"></td>
+        <td class="right subtotal">00.00</td>
+        <td class="actions"><button class="remove">Remove</button></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" class="right">Grand Total (P):</td>
+        <td class="right" id="grandTotal">00.00</td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+    </form>
+    </main>
+
+ <footer>
+        <p>&copy; 2026 Makometsa Poultry. All rights reserved.</p>
+        </footer>
+</body>
+</html>

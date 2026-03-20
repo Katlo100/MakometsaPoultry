@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+         <header>
+    <h1 style="color:black">Welcome to Makometsa Poultry</h1>
+    <h4 style="color:black">Hard Work You Can Taste</h4>
+    <p>Your Trusted Source For High-Quality poultry products.</p>
+       <h1 style="color:black">Feedback Form</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="Products.html">Products</a> |
+            <a href="Contact.html">Contact</a> |
+            <a href="About.html">About</a> |
+            <a href="Order.html">Order</a> |
+            <a href="Feedback.html">Feedback</a>
+        </nav>
+        </header>
+
+        <main>
+        <h2>We Value Your Feedback</h2>
+        <P>Your thoughts helps us improve and continue delivering the best service.</P>
+
+        <h2>Tell Us About Your Experince</h2>
+        <ul>
+            <li>1. Were you satisfied with the service?</li>
+            <li>2. How was the quality of the product?</li>
+            <li>3. What can we improve?</li>
+        </ul>
+
+        <h2>Why Feedback Matters</h2>
+        <p>Your feedback helps us grow, mainatain high standards, and better serve you and the community.</p>
+        <p>Thank you for taking the time to share your thoughts with us!</p>
+        <h3>Send Us A Message</h3>
+        <form id="contactForm" action="/action_page.php">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+           
+            </script>
+            <label for="inquiry">Type of Inquiry:</label>
+            <select id="inquiry" name="inquiry">
+                <option value="Compliment">Compliment Us</option>
+                <option value="info">Request More Information</option>
+                <option value="complaint">Submit a Complaint</option>
+                <option value="other">Other</option>
+            </select>
+            <!-- message box for certain inquiries -->
+            <div id="messageGroup" style="display:none; margin-top:10px;">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" style="width:100%;"></textarea>
+                 <input type="submit" value="Submit">
+            <output id="result"></output>
+            <script>
+                document.getElementById("inquiry").addEventListener("change", function() {
+                    var inquiryType = this.value;
+                    var messageGroup = document.getElementById("messageGroup");
+                    if (inquiryType === "Compliment Us" || inquiryType === "complaint" || inquiryType === "other") {
+                        messageGroup.style.display = "block";
+                    } else {                        messageGroup.style.display = "none";
+                    }                });
+            </script>  
+            </form>
+    </h3>
+    </main>
+     <footer>
+        <p>&copy; 2026 Makometsa Poultry. All rights reserved.</p>
+        </footer>
+</body>
+</html>
